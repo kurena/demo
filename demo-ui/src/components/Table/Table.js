@@ -27,12 +27,13 @@ export const Table = ({ data }) => {
   } = useTable({ columns, data })
 
   return (
-    <table {...getTableProps()} className={styles.table}>
+    <table data-testid="table" {...getTableProps()} className={styles.table}>
       <thead>
         {headerGroups.map(headerGroup => (
           <tr {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map(column => (
               <th
+                data-testid="table-header"
                 {...column.getHeaderProps()}
                 className={styles.header}
               >
@@ -50,6 +51,7 @@ export const Table = ({ data }) => {
               {row.cells.map(cell => {
                 return (
                   <td
+                    data-testid="table-data"
                     {...cell.getCellProps()}
                     className={styles.data}
                   >
