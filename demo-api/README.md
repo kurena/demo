@@ -1,5 +1,4 @@
-# Getting Started with Fastify-CLI [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
-This project was bootstrapped with Fastify-CLI.
+# NodeJS API with Fastify
 
 ## Available Scripts
 
@@ -16,9 +15,11 @@ Run the test cases.
 ## Notes
 - Uses a SQL Server DB - So It's required in order to execute the DB Transactions
 The DB has OrderItem table with id (PK) and name
-- Need to set the following ENV vars
-PORT
-DB_USERNAME
-DB_PASSWORD
-DB_DATABASE
-DB_HOST
+
+
+Need to set the following ENV vars:
+* PORT
+* DB_USERNAME
+* DB_PASSWORD
+* DB_DATABASE
+* DB_HOST
