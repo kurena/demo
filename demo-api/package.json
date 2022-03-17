@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
-    "start": "export PORT=3001 DB_USERNAME=sa DB_PASSWORD=Password.1 DB_DATABASE=DEMO DB_HOST=localhost;fastify start -l info app.js",
+    "start": "fastify start -l info app.js",
     "dev": "fastify start -w -l info -P app.js"
   },
   "keywords": [],
